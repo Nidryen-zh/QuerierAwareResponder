@@ -1,0 +1,34 @@
+####################################################################
+## friends
+####################################################################
+OUTPUT_PATH="output/friends_rachel/finetune"
+OUTPUT_LOG_PATH="$OUTPUT_PATH/log"
+ROLE_SYSTEM_PROFILE=none
+TRAIN_EPOCH=15
+SAVE_STEP=1700
+EVAL_STEP=25
+BATCH_SIZE=4
+MAX_LEN=592
+TUNED_NORM=False
+
+MODEL="meta-llama/Meta-Llama-3-8B-Instruct"
+DATA_ROOT="data/friends/diags_two_role_rachel"
+DATA_EVAL=()
+DATA=()
+ROOT="data/friends/diags_two_role_rachel/*"
+for dir in $ROOT
+do
+  if test -d $dir
+  then
+    for file in ${dir}/*
+    do
+      if [[ $file =~ 'response_L512_dev.json' ]]; then
+        DATA_EVAL[${#DATA_EVAL[@]}]=$file
+      fi
+      if [[ $file =~ 'response_L512_train.json' ]]; then
+        DATA[${#DATA[@]}]=$file
+      fi
+    done
+  fi
+done
+
