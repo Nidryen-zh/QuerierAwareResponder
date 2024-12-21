@@ -34,3 +34,15 @@ We can run the bash file with logging the output.
 ```sh
 bash finetune/run_example.sh 2>&1 | tee output/run_example_log.txt
 ``` 
+## Citation
+```bib
+@misc{zeng2024personalizedllmgeneratingcustomized,
+      title={Personalized LLM for Generating Customized Responses to the Same Query from Different Users}, 
+      author={Hang Zeng and Chaoyue Niu and Fan Wu and Chengfei Lv and Guihai Chen},
+      year={2024},
+      eprint={2412.11736},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2412.11736}, 
+}
+```
