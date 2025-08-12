@@ -2,7 +2,7 @@ from rouge import Rouge
 import json
 from transformers.trainer_utils import EvalPrediction
 import os
-
+ 
 def compute_rouge(eval_prediction: EvalPrediction, inputs, output_path: str = None, language="english"):
     if output_path is not None:
         os.makedirs(os.path.split(output_path)[0], exist_ok=True)

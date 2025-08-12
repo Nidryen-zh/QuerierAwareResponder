@@ -16,7 +16,7 @@ class TrainerWithEval(Trainer):
         generate outputs & return bleu score or rouge score
         """
         args = self.args
-
+ 
         prediction_loss_only = prediction_loss_only if prediction_loss_only is not None else args.prediction_loss_only
 
         # if eval is called w/o train, handle model prep here

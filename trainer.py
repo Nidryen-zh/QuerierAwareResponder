@@ -17,7 +17,7 @@ The Trainer class, to easily train a 🤗 Transformers from scratch or finetune 
 """
 '''
 [NOTE]
-This is from transformers==4.37 (already some modifications)
+This is from transformers==4.37 (already some modifications) 
 '''
 
 import contextlib

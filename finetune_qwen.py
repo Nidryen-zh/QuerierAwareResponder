@@ -520,7 +520,7 @@ def train():
 
     if training_args.fp16:
         model.half()
-    if training_args.bf16:
+    if training_args.bf16: 
         model.bfloat16()
 
     if training_args.init_specific_para:

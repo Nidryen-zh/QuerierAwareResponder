@@ -75,3 +75,4 @@ class DataCollatorWithPaddingAndPreserveString(DataCollatorWithPadding):
         for key in other_columns:
             batch[key] = [feature[key] for feature in other_features]
         return batch
+

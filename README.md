@@ -5,15 +5,19 @@ We, for the first time, study querier-aware LLM personalization to generate cust
 <!-- > this version of code contains `finetune` and `finetune_qar` (our design)  -->
 
 <div align="center">
-  <figure>
-    <img src="asserts/problem.png" alt="pipeline" width="500"/>
+    <img src="asserts/problem.png" alt="pipeline" width="500"/>  
     <figcaption>Two types of personalized language models. (a) Role-Based Responder in existing work returns answers according to the assigned personality. (b) Querier-Aware Responder in this work returns different answers for same query asked by different persons according to personality of queriers.</figcaption>
-  </figure>
 </div>
 
 <p align="center">
        🤗 <a href="https://huggingface.co/datasets/Nidhogg-zh/Multi-Querier_Dialogue">Hugging Face</a> &nbsp&nbsp📑 <a href="https://arxiv.org/abs/2412.11736">Paper</a>&nbsp&nbsp
 </p>
+
+
+## 📢 News
+- [2025.08] This work is accepted for publication at CIKM 2025.  
+- [2024.12] We opensource Multi-Querier Dialogue Dataset.  
+- [2024.12] We opensource Querier-Aware Responder.
 
 ## 📁 Key Files and Folders
 - `finetune_llama.py`: training code for Llama, the default setting is lora tuning.
@@ -28,7 +32,6 @@ We, for the first time, study querier-aware LLM personalization to generate cust
 - `finetune`: config files for different datasets are put here. 
 
 We provide configs of both vanilla finetuning (e.g. `finetune_llama_ds.sh` and `finetune_qwen_ds.sh`) and finetuning with our custom design (e.g. `finetune_llama_qar_ds.sh` and `finetune_qwen_qar_ds.sh`).
-
 
 ## 🚀 Quick Start
 
