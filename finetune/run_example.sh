@@ -32,10 +32,12 @@ for dataset in "swordsman_tongxiangyu" "swordsman_baizhantang" "swordsman_lvxiuc
 do
     export LR=2e-4
 
+    ## our design
     export PROFILE="finetune/configs/$dataset/finetune_qar.sh"
     print_cmd $PROFILE
     bash finetune/finetune_qwen_qar_ds.sh
 
+    ## finetuning
     export PROFILE="finetune/configs/$dataset/finetune.sh"
     print_cmd $PROFILE
     bash finetune/finetune_qwen_ds.sh
@@ -47,10 +49,12 @@ for dataset in "bigbang_sheldon" "bigbang_leonard" "friends_rachel" "friends_ros
 do
     export LR=2e-4
 
+    ## our design
     export PROFILE="finetune/configs/$dataset/finetune_qar.sh"
     print_cmd $PROFILE
     bash finetune/finetune_llama_qar_ds.sh
 
+    ## finetuning
     export PROFILE="finetune/configs/$dataset/finetune.sh"
     print_cmd $PROFILE
     bash finetune/finetune_llama_ds.sh
