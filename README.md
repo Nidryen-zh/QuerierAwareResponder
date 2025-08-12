@@ -5,8 +5,8 @@ We, for the first time, study querier-aware LLM personalization to generate cust
 <!-- > this version of code contains `finetune` and `finetune_qar` (our design)  -->
 
 <div align="center">
-    <img src="asserts/problem.png" alt="pipeline" width="500"/>  
-    <figcaption>Two types of personalized language models. (a) Role-Based Responder in existing work returns answers according to the assigned personality. (b) Querier-Aware Responder in this work returns different answers for same query asked by different persons according to personality of queriers.</figcaption>
+    <img src="asserts/problem.png" alt="pipeline" width="500"/><br>
+    <span>Two types of personalized language models. (a) Role-Based Responder in existing work returns answers according to the assigned personality. (b) Querier-Aware Responder in this work returns different answers for same query asked by different persons according to personality of queriers.</span>
 </div>
 
 <p align="center">
